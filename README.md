@@ -11,7 +11,6 @@
 * **Smart Suggested Replies:** Dynamic "Action Chips" that allow users to respond instantly with one tap, generated with AI that understands the context.
 * **Conversational Memory ("Memory Job"):** The AI maintains full awareness of the conversation history to provide relevant follow-ups.
 * **Profile Persistence:** Built-in integration with **Firebase Firestore** to store user details and medical notes.
-* **Multi-Language Support:** Optimized for English, French, and Arabic.
 * **Dual-Voice Synthesis:** Uses distinct vocal pitches via `flutter_tts` to differentiate between the user and the recipient.
 
 ---
@@ -46,17 +45,6 @@ To allow your mobile device to communicate with your PC's AI engine:
 1.  Run `flutterfire configure` to generate your `firebase_options.dart`.
 2.  Enable **Cloud Firestore** and ensure the `users` collection is accessible.
 
-### 4. Audio Assets
-Add a ringing sound to your project:
-1.  Place `ringing.mp3` in the `assets/` folder.
-2.  Update `pubspec.yaml`:
-    ```yaml
-    flutter:
-      assets:
-        - assets/logo.png
-        - assets/ringing.mp3
-    ```
-
 ---
 
 ## 🚀 Running the App
@@ -66,7 +54,7 @@ Add a ringing sound to your project:
     flutter pub get
     ```
 2.  **Update Endpoint:**
-    Open `lib/call_simulation_page.dart` and update the `ollamaUrl` with your PC's local IP address:
+    Open `lib/call_simulation_page.dart` and update the `ollamaUrl` with your PC's local IP address or with vpn/stunnel link:
     ```dart
     final String ollamaUrl = "http://192.168.1.XX:11434/api/chat";
     ```
@@ -83,7 +71,7 @@ Add a ringing sound to your project:
 * `splash_screen.dart`: Branded entry animation.
 * `screenone.dart`: User onboarding and Firebase profile setup.
 * `screentwo.dart`: Scenario selection dashboard.
-* `call_dialing_page.dart`: Dialpad and language selection.
+* `call_dialing_page.dart`: Dialpad.
 * `call_simulation_page.dart`: Core logic for AI calls, Memory Job, and TTS.
 * `profilepage.dart`: Management of saved user information.
 
