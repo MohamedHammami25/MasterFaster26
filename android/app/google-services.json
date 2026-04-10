@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "231543446072",
+    "project_id": "masterfaster-de1d1",
+    "storage_bucket": "masterfaster-de1d1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231543446072:android:9b6ef612690f38941e24cd",
+        "android_client_info": {
+          "package_name": "com.example.masterfaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB32a7Yvt0TytkisVCdH8BUSy7CTBalpWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
